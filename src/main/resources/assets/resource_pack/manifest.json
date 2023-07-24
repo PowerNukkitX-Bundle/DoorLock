@@ -1,0 +1,39 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.2.13"
+			],
+			"dash": [
+				"0.8.18"
+			]
+		}
+	},
+	"header": {
+		"name": "Resource Pack For DoorLock",
+		"description": "https://github.com/PowerNukkitX/DoorLock",
+		"min_engine_version": [
+			1,
+			19,
+			0
+		],
+		"uuid": "CD4579B3-E972-B42B-CFFC-AE15ACED9ACD",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "5B37903D-CF54-5265-DA29-4DB3187CAB75",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

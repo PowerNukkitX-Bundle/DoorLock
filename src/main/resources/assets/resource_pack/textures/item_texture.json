@@ -1,0 +1,9 @@
+{
+	"resource_pack_name": "Resource Pack For DoorLock",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"lock": {
+			"textures": "textures/items/lock_texture"
+		}
+	}
+}
