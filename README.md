@@ -1,7 +1,7 @@
 # DoorLock
 [![PowerNukkitX](https://img.shields.io/badge/PowerNukkitX-green)](https://github.com/PowerNukkitX/PowerNukkitX)
-[![Release](https://img.shields.io/github/v/release/wode490390/TheEnd)](https://github.com/PowerNukkitX/DoorLock/releases)
-[![Release date](https://img.shields.io/github/release-date/wode490390/TheEnd)](https://github.com/PowerNukkitX/DoorLock/releases)
+[![Release](https://img.shields.io/github/v/release/PowerNukkitX/DoorLock)](https://github.com/PowerNukkitX/DoorLock/releases)
+[![Release date](https://img.shields.io/github/release-date/PowerNukkitX/DoorLock)](https://github.com/PowerNukkitX/DoorLock/releases)
 
 This is a plugin that allows you to lock a door in your PNX server!
 
