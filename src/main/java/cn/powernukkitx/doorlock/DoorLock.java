@@ -11,6 +11,8 @@ import cn.nukkit.event.block.DoorToggleEvent;
 import cn.nukkit.event.player.PlayerInteractEvent;
 import cn.nukkit.item.Item;
 import cn.nukkit.math.BlockVector3;
+import cn.nukkit.math.Vector3;
+import cn.nukkit.network.protocol.PlaySoundPacket;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.Config;
 import cn.powernukkitx.doorlock.item.ItemLock;
@@ -18,6 +20,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static cn.nukkit.level.ParticleEffect.TOTEM;
 
 public class DoorLock extends PluginBase implements Listener {
     private static DoorLock instance;
@@ -101,8 +105,8 @@ public class DoorLock extends PluginBase implements Listener {
             event.getPlayer().sendToast("成功上锁", "门已经被上锁！");
             this.toIronDoor(door);
             event.getPlayer().getInventory().setItemInHand(Item.get(0));
+            door.getLevel().addParticleEffect(new Vector3(door.x + 0.5, door.y + 1, door.z + 0.5), TOTEM);
         }
-
     }
 
     private void tryUnlockDoor(Player player, BlockDoor door, @Nullable String lockOwner) {
@@ -115,6 +119,7 @@ public class DoorLock extends PluginBase implements Listener {
                 if (failed.length != 0) {
                     player.getLevel().dropItem(door.up(), failed[0]);
                 }
+                door.getLevel().addParticleEffect(new Vector3(door.x + 0.5, door.y + 1, door.z + 0.5), TOTEM);
             } else {
                 player.sendToast("无法打开", "这个门已经被 " + lockOwner + " 上锁了！");
             }
